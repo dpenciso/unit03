@@ -7,20 +7,19 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 //BODY RULES
 body {
   font-family: $font-family;
+  max-width: 1140px;
 }
 
 // HEADER RULES
 header {
   padding: .5%;
-  background-color: $primaryColor;
   h1.companyName {
-  color: white;
+  color: black;
   font-weight: $heavyWeight;
   display: block;
   }
   h1.companySlogan {
-  color: white;
-  display: none;
+  color: black;
   font-weight: $regularWeight;
   }
 }
