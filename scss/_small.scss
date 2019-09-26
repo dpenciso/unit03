@@ -29,7 +29,7 @@ header {
 
 
 nav {
-  background-color: rgb(87, 86, 86);
+  background-color: $primaryColor;
   margin: 0;
   ul {
     margin: 0;
@@ -42,7 +42,7 @@ nav {
     float: left;
   }
   li.active {
-    background-color: rgb(148, 144, 144);
+    background-color: darken($primaryColor, 10%);
   }
   a {
     display: block;
@@ -52,7 +52,7 @@ nav {
     text-decoration: none;
   }
   a:hover {
-    background-color: #333;
+    background-color: lighten($primaryColor,10%);
   }
 }
 
@@ -63,19 +63,25 @@ h1.text {
   font-weight: $heavyWeight;
 }
 
-figure {
-  width: 46%;
-  margin: 5% 2%;
-  display: block;
-  float: left;
-  img {
-    width: 100%;
+.figureDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  figure {
+    flex-basis: 45%;
+    margin: 0;
+    padding: 0;
+    img {
+      width: 100%;
+      }
+    figcaption {
+      text-align: center;
+      font-weight: $regularWeight;
     }
-  figcaption {
-    text-align: center;
-    font-weight: $regularWeight;
   }
-  }
+}
+
+
 
 p {
   font-weight: $regularWeight;
